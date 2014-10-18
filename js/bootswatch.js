@@ -1,4 +1,7 @@
-(function(){
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-})();
+(function($){
+  /*
+   * Initialize all bootstrap popovers and tooltips
+   */
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
+})(jQuery);

@@ -22,6 +22,7 @@ gulp.task('server', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/less/*.less', ['less']);
+    gulp.watch('*.html', function() {})
 });
 
 gulp.task('default', ['watch', 'server'])
