@@ -1351,6 +1351,7 @@ body{padding-top:50px}
 .section{margin-top:8em}
 .nav-tabs{margin-bottom:15px}
 .progress{margin-bottom:10px}
+.well form .form-group:last-child,form legend{margin-bottom:0}
 .modal.demo{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}
 .modal.demo .modal-dialog{width:90%}
 footer{margin:5em 0 2em}
