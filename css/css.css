@@ -1346,7 +1346,7 @@ a.profile .name:hover{color:#b15315}
 .profile .title{color:#4e5d6c;font-size:14px;font-weight:400;margin-bottom:0}
 #banner{border-bottom:none}
 @media (max-width:767px){#banner{margin-bottom:2em;text-align:center}}
-body{padding-top:50px}
+body{padding-top:50px;position:relative}
 .page-header h1{font-size:4em}
 .section{margin-top:8em}
 .nav-tabs{margin-bottom:15px}
