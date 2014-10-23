@@ -11,12 +11,14 @@
     var form = $(this);
     var btn = $('[type=submit]', this).button('loading');
 
+    // parse form data
     var data = form.serializeArray().reduce(function (hash, ele) {
       hash[ele.name] = ele.value;
       return hash;
     }, {});
 
-    $.ajax({
+    // submit form
+    var ajax = $.ajax({
       url: form.attr('action'),
       method: "POST",
       data: data,
@@ -24,8 +26,14 @@
     }).done(function(data) {
       // TODO: verify response
       console.log(data);
-    }).always(function () {
-      btn.button('reset')
     });
+
+    // de-bounce
+    var timer = new Promise(function (accept) {
+      setTimeout(accept, 2000);
+    });
+
+    var reset = function () { btn.button('reset'); };
+    Promise.all([ajax, timer]).then(reset, reset);
   });
 })(jQuery);
