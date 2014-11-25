@@ -5,6 +5,9 @@
   $('[data-toggle="popover"]').popover();
   $('[data-toggle="tooltip"]').tooltip();
 
+  /*
+  * Initialize form AJAX submissions
+  */
   $('#contact-form').submit(function (event) {
     event.preventDefault();
 
@@ -37,4 +40,22 @@
     var reset = function () { btn.button('reset'); };
     Promise.all([ajax, timer]).then(reset, reset);
   });
+
+  /*
+  * Initialize smooth scroll
+  */
+  $('a[href^=#]').click(function(e) {
+    var href = $(this).attr('href');
+    $(href).smooth_scroll_to(function() {
+      window.location.hash = href;
+    });
+    e.preventDefault();
+  });
+
+  // jQuery plugin
+  $.fn.smooth_scroll_to = function(cb) {
+    $('body').animate({
+      scrollTop: parseInt($(this).offset().top, 10)
+    }, 500, cb);
+  };
 })(jQuery);
