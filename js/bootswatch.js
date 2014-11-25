@@ -16,6 +16,7 @@
       hash[ele.name] = ele.value;
       return hash;
     }, {});
+    delete data['_gotcha']
 
     // submit form
     var ajax = $.ajax({

@@ -1,253 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="utf-8" />
     <title>Top Level Photo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/css.css" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body data-spy="scroll" data-target=".navbar-default">
+</head>
+<body data-spy="scroll" data-target=".navbar-default">
 
     <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#top" class="navbar-brand">Top Level Photo</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#top" class="navbar-brand">Top Level Photo</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="hide">
+                        <a href="#top">Home</a>
+                    </li>
+                    <!-- scrollspy hack -->
+                    <li>
+                        <a href="#what">What</a>
+                    </li>
+                    <li>
+                        <a href="#who">Who</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li class="hide"><a href="#top">Home</a></li><!-- scrollspy hack -->
-            <li><a href="#what">What</a></li>
-            <li><a href="#who">Who</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-
     <div class="container" id="top">
 
-      <!-- Carousel
-      ================================================== -->
-      <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Top Level Photo</h1>
-            <p class="lead">Aerial cinematography &amp; photography for the Gallatin valley</p>
-          </div>
+        <!-- Carousel
+        ================================================== -->
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Top Level Photo</h1>
+                    <p class="lead">Aerial cinematography &amp; photography for the Gallatin valley</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/aerial_3_rsz.jpg" alt="Balloons">
-            <div class="carousel-caption">
-              Balloons
+        <div id="carousel-main" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-main" data-slide-to="1"></li>
+                <li data-target="#carousel-main" data-slide-to="2"></li>
+                <li data-target="#carousel-main" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/aerial_3_rsz.jpg" alt="Balloons" />
+                    <div class="carousel-caption">Balloons</div>
+                </div>
+                <div class="item">
+                    <img src="img/aerial_2_rsz.jpg" alt="College" />
+                    <div class="carousel-caption">College</div>
+                </div>
+                <div class="item">
+                    <img src="img/aerial_4_rsz.jpg" alt="Football" />
+                    <div class="carousel-caption">Football</div>
+                </div>
+                <div class="item">
+                    <img src="img/aerial_1_rsz.jpg" alt="Town" />
+                    <div class="carousel-caption">Town</div>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <img src="img/aerial_2_rsz.jpg" alt="College">
-            <div class="carousel-caption">
-              College
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/aerial_4_rsz.jpg" alt="Football">
-            <div class="carousel-caption">
-              Football
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/aerial_1_rsz.jpg" alt="Town">
-            <div class="carousel-caption">
-              Town
-            </div>
-          </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-
-      <!-- What
-      ================================================== -->
-      <div class="section clearfix" id="what">
-        <div class="page-header">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>What we do</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-5">
-            <img src="/img/drone_1.png" class="img-responsive" alt="Drone"/>
-          </div>
-          <div class="col-lg-7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in eros vitae ante aliquam congue vel non nisi. Ut eget sollicitudin elit. Suspendisse euismod, massa et commodo dictum, erat metus facilisis quam, a congue erat purus in nunc. Donec elementum lectus at bibendum aliquet. Duis sit amet lobortis quam, ac tempus lorem. Proin volutpat urna vitae tortor commodo ultricies. Etiam erat mauris, aliquam eu felis ac, euismod suscipit est. Cras quis enim eu dui congue viverra id in magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce scelerisque nunc eget velit tincidunt porttitor. Vestibulum pulvinar vestibulum sodales. Mauris vehicula neque vitae leo accumsan pellentesque. Cras efficitur imperdiet urna sed tincidunt. Vestibulum mi eros, hendrerit nec consequat auctor, lobortis quis nibh.</p>
-            <p>Donec tristique sem eu orci sollicitudin, molestie lobortis felis mattis. In porta justo non arcu vehicula, et ultrices ex gravida. Etiam eu elementum leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis bibendum laoreet purus, ac blandit felis. Nulla ac eros id urna cursus sodales. Aenean eget erat euismod, venenatis magna id, efficitur neque. Praesent vehicula eros lacinia lectus gravida, vel egestas tortor pretium. Nam condimentum interdum hendrerit.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Who
-      ================================================== -->
-      <div class="section clearfix" id="who">
-        <div class="page-header">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>Who we are</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="profile">
-              <img src="/img/pat.png" alt="Pat" title="Pat" class="pic">
-              <h4 class="name">Patrick Ingham</h4>
-              <p class="title">Co-Founder</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mattis metus, sed rutrum enim. Donec eget porttitor nisl, et hendrerit nisi. Pellentesque congue ultricies erat in blandit. Nam pretium ac dolor sit amet tincidunt. Quisque luctus tortor eu dolor vulputate egestas. Phasellus massa velit, porttitor sed consequat quis, scelerisque et ante. Nam et lorem vel augue scelerisque elementum quis ultricies elit. Duis congue porttitor ligula, sit amet iaculis nisi eleifend bibendum. Pellentesque efficitur mattis porta. Proin luctus sapien at sapien placerat, eget maximus lectus tincidunt. Etiam sollicitudin leo id dictum consectetur. Etiam tellus quam, consectetur sit amet consequat vitae, mollis id erat. Aenean posuere egestas est, vitae molestie nisl imperdiet et. Ut tincidunt efficitur posuere.</p>
-            <p class="text-right">&mdash; <a href="mailto:pat@toplevelphoto.com">Pat</a></p>
-          </div>
-          <div class="col-lg-6">
-            <div class="profile">
-              <img src="/img/nate.png" alt="Nate" title="Nate" class="pic">
-              <h4 class="name">Nathan Woods</h4>
-              <p class="title">Co-Founder</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mattis metus, sed rutrum enim. Donec eget porttitor nisl, et hendrerit nisi. Pellentesque congue ultricies erat in blandit. Nam pretium ac dolor sit amet tincidunt. Quisque luctus tortor eu dolor vulputate egestas. Phasellus massa velit, porttitor sed consequat quis, scelerisque et ante. Nam et lorem vel augue scelerisque elementum quis ultricies elit. Duis congue porttitor ligula, sit amet iaculis nisi eleifend bibendum. Pellentesque efficitur mattis porta. Proin luctus sapien at sapien placerat, eget maximus lectus tincidunt. Etiam sollicitudin leo id dictum consectetur. Etiam tellus quam, consectetur sit amet consequat vitae, mollis id erat. Aenean posuere egestas est, vitae molestie nisl imperdiet et. Ut tincidunt efficitur posuere.</p>
-            <p class="text-right">&mdash; <a href="mailto:nate@toplevelphoto.com">Nate</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Info
-      ================================================== -->
-      <div class="section clearfix" id="contact">
-        <div class="page-header">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>Want to hear more?</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="well">
-              <form id="contact-form" class="form-horizontal" action="//forms.brace.io/photo@toplevelphoto.com" method="POST">
-                <!-- <input type="text" name="_gotcha" style="display:none" /> -->
-                <input type="hidden" name="_subject" value="New submission!" />
-                <fieldset>
-                  <legend>Drop us a line &hellip;</legend>
-                  <p class="text-right">
-                    &hellip; or hit us up directly at
-                    <a href="mailto:photo@toplevelphoto.com">Photo@TopLevelPhoto.com</a>
-                  </p>
-                  <div class="form-group">
-                    <label for="inputName" class="col-lg-2 control-label">Name</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
+        <!-- What
+        ================================================== -->
+        <div class="section clearfix" id="what">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>What we do</h1>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="_replyto">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="textArea" class="col-lg-2 control-label">Message</label>
-                    <div class="col-lg-10">
-                      <textarea class="form-control" rows="3" id="textArea" placeholder="Message" name="message"></textarea>
-                      <!-- <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span> -->
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
-                      <button type="reset" class="btn btn-default">Cancel</button>
-                      <button type="submit" class="btn btn-primary pull-right" data-loading-text="Sending&hellip;">Submit</button>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-5">
-            <img src="/img/drone_1.png" class="img-responsive" alt="Drone">
-          </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="lead">We are a company aiming to offer affordable aerial photography for any range of applications. Aerial photography is a great way to make your event or property stand out. The ability to show friends, fans and customers the top level down will add a real touch of class and professionalism.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="/img/drone_1.png" class="img-responsive center-block" alt="Drone" />
+                </div>
+                <div class="col-lg-7">
+                    <h3>What can we do for you?</h3>
+                    <dl>
+                        <dt>Events</dt>
+                        <dd>Whether a wedding, a concert, sports or any event, a top level camera will provide a unique and memorable perspective. Outdoor events in particular will benefit from the breathtaking angle and sweeping panoramas available.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Real Estate</dt>
+                        <dd>Aerial photography allows you to show the entire property in a single shot, as well as give flying tours of interesting features, giving you a fresh angle and a unique appeal to all properties, large and small.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Agricultural</dt>
+                        <dd>A fly over by a drone is faster and cheaper than by a traditional plane, and allows for a fine grained inspection of crop areas, allowing for increased yields, time savings and crop health inspections. Aerial documentation can also be a useful component of crop insurance claims.</dd>
+                    </dl>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Footer
-      ================================================== -->
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="list-inline">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-              <li><a href="#what">What</a></li>
-              <li><a href="#who">Who</a></li>
-              <li><a href="#contact">Info</a></li>
-            </ul>
-            <p>
-                &copy; Top Level Photo <script>document.write((new Date()).getFullYear())</script> &mdash; by
-                <a href="mailto:pat@toplevelphoto.com">Pat</a> and <a href="mailto:nate@toplevelphoto.com">Nate</a>.
-            </p>
-          </div>
+        <!-- Who
+        ================================================== -->
+        <div class="section clearfix" id="who">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Who we are</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="profile">
+                        <img src="/img/pat.png" alt="Pat" title="Pat" class="pic" />
+                        <h4 class="name">
+                            <a href="mailto:pat@toplevelphoto.com" target="_blank">Patrick Ingham</a>
+                        </h4>
+                        <p class="title">Co-Founder</p>
+                    </div>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mattis metus, sed rutrum enim. Donec eget porttitor nisl, et hendrerit nisi. Pellentesque congue ultricies erat in blandit. Nam pretium ac dolor sit amet tincidunt. Quisque luctus tortor eu dolor vulputate egestas. Phasellus massa velit, porttitor sed consequat quis, scelerisque et ante. Nam et lorem vel augue scelerisque elementum quis ultricies elit. Duis congue porttitor ligula, sit amet iaculis nisi eleifend bibendum. Pellentesque efficitur mattis porta. Proin luctus sapien at sapien placerat, eget maximus lectus tincidunt. Etiam sollicitudin leo id dictum consectetur. Etiam tellus quam, consectetur sit amet consequat vitae, mollis id erat. Aenean posuere egestas est, vitae molestie nisl imperdiet et. Ut tincidunt efficitur posuere.</p><p class="text-right">&mdash; <a href="mailto:pat@toplevelphoto.com">Pat</a></p> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="profile">
+                        <img src="/img/nate.png" alt="Nate" title="Nate" class="pic" />
+                        <h4 class="name">
+                            <a href="mailto:nate@toplevelphoto.com" target="_blank">Nathan Woods</a>
+                        </h4>
+                        <p class="title">Co-Founder</p>
+                    </div>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mattis metus, sed rutrum enim. Donec eget porttitor nisl, et hendrerit nisi. Pellentesque congue ultricies erat in blandit. Nam pretium ac dolor sit amet tincidunt. Quisque luctus tortor eu dolor vulputate egestas. Phasellus massa velit, porttitor sed consequat quis, scelerisque et ante. Nam et lorem vel augue scelerisque elementum quis ultricies elit. Duis congue porttitor ligula, sit amet iaculis nisi eleifend bibendum. Pellentesque efficitur mattis porta. Proin luctus sapien at sapien placerat, eget maximus lectus tincidunt. Etiam sollicitudin leo id dictum consectetur. Etiam tellus quam, consectetur sit amet consequat vitae, mollis id erat. Aenean posuere egestas est, vitae molestie nisl imperdiet et. Ut tincidunt efficitur posuere.</p><p class="text-right">&mdash; <a href="mailto:nate@toplevelphoto.com">Nate</a></p> -->
+                </div>
+            </div>
         </div>
 
-      </footer>
+        <!-- Info
+        ================================================== -->
+        <div class="section clearfix" id="contact">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Want to hear more?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="well">
+                        <form id="contact-form" class="form-horizontal" action="//forms.brace.io/photo@toplevelphoto.com" method="POST">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_subject" value="New submission!" />
+                            <fieldset>
+                                <legend>Drop us a line &hellip;</legend>
+                                <p class="text-right">
+                                    &hellip; or hit us up directly at
 
+                                    <a href="mailto:photo@toplevelphoto.com">Photo@TopLevelPhoto.com</a>
+                                </p>
+                                <div class="form-group">
+                                    <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="_replyto" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="textArea" class="col-lg-2 control-label">Message</label>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-control" rows="3" id="textArea" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                        <button type="reset" class="btn btn-default">Cancel</button>
+                                        <button type="submit" class="btn btn-primary pull-right" data-loading-text="Sending&hellip;">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="/img/drone_1.png" class="img-responsive center-block visible-lg-block" alt="Drone" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer
+        ================================================== -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li class="pull-right">
+                            <a href="#top">Back to top</a>
+                        </li>
+                        <li>
+                            <a href="#what">What</a>
+                        </li>
+                        <li>
+                            <a href="#who">Who</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p>
+                        &copy; Top Level Photo
+                        <script>document.write((new Date()).getFullYear())</script> &mdash; by
+                        <a href="mailto:pat@toplevelphoto.com">Pat</a> and
+                        <a href="mailto:nate@toplevelphoto.com">Nate</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
-
     <script src="/js/jquery-1.10.2.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-      if (window.location.host.indexOf('localhost')) {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        if (window.location.host.indexOf('localhost')) {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-55871929-1', 'auto');
-        ga('send', 'pageview');
+            ga('create', 'UA-55871929-1', 'auto');
+            ga('send', 'pageview');
 
-        /*
-         * Log all jQuery AJAX requests to Google Analytics
-         * See: http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/
-         */
-        jQuery(document).ajaxSend(function(event, xhr, settings){
-            ga('send', 'pageview', settings.url);
-        });
-      }
-      </script>
+            /*
+            * Log all jQuery AJAX requests to Google Analytics
+            * See: http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/
+            */
+            jQuery(document).ajaxSend(function(event, xhr, settings){
+                ga('send', 'pageview', settings.url);
+            });
+        }
+    </script>
     <script src="/js/bootswatch.js"></script>
-  </body>
+</body>
 </html>
